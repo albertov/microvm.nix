@@ -18,7 +18,7 @@ writeShellScriptBin "microvm" ''
   set -e
 
   PATH=${lib.makeBinPath [
-    git jq nix
+    git jq nixVersions.nix_2_26
   ]}:$PATH
   STATE_DIR=/var/lib/microvms
   ACTION=help
